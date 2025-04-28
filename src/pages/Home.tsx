@@ -6,9 +6,13 @@ const Home = () => {
       <div className="h-screen flex items-center justify-center">Home</div>
       <hr />
       <Contact />
+      <hr />
       <div className="h-screen flex items-center justify-center">Home</div>
+      <hr />
       <Contact />
+      <hr />
       <div className="h-screen flex items-center justify-center">Home</div>
+      <hr />
       <Contact />
     </>
   );
