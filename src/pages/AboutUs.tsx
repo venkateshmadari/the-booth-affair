@@ -38,9 +38,9 @@ const AboutUs = () => {
             </div>
 
             {/* Overlapping image */}
-            <div className="absolute bottom-0 md:right-[25%] right-[1%] md:top-[20%] top-[30%] md:w-3/5 w-4/5 h-3/5 z-20">
+            <div className="absolute bottom-0 md:right-[25%] right-[1%] md:top-[25%] top-[30%] md:w-3/5 w-4/5 h-3/5 z-20">
               <img
-                src="https://i.pinimg.com/736x/a8/78/29/a878293ece04f95ead938d3f371eb705.jpg"
+                src="https://i.pinimg.com/736x/bd/48/6b/bd486b098d266b98d3b7c50dadfaf32a.jpg"
                 alt="Artwork 2"
                 className="w-full h-full object-cover rounded-lg shadow-xl border-4 border-third"
               />
