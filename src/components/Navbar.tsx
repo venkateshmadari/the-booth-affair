@@ -153,7 +153,7 @@ export default function Navbar() {
             animate="open"
             exit="closed"
             variants={sidebarVariants}
-            className="fixed top-0 left-0 h-full bg-primary z-[1000] w-4/5 md:w-1/5 shadow-xl"
+            className="fixed top-0 left-0 h-full bg-primary z-[1000] w-4/5 lg:w-1/5 md:w-2/5 shadow-xl"
           >
             <div className="p-6 h-full flex flex-col">
               <div className="flex justify-between items-center mb-10">
