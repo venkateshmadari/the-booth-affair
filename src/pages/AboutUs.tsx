@@ -79,7 +79,7 @@ const AboutUs = () => {
             you.
           </p>
         </TextFade>
-        <div className="bg-primary py-4 w-full my-7 rounded-2xl">
+        {/* <div className="bg-primary py-4 w-full my-7 rounded-2xl">
           <TextFade direction="down">
             <p className="font-Cormorant pt-7 pb-1 text-center text-secondary font-semibold text-4xl italic">
               Flash. Flirt. Repeat.
@@ -90,7 +90,17 @@ const AboutUs = () => {
               That’s not just our tagline — it’s our philosophy.
             </p>
           </TextFade>
-        </div>
+        </div> */}
+        <TextFade direction="down">
+          <p className="font-Cormorant pt-8 pb-1 text-center text-primary font-semibold text-4xl italic">
+            Flash. Flirt. Repeat.
+          </p>
+        </TextFade>
+        <TextFade direction="down">
+          <p className="font-Inter pb-8 text-center  md:text-base text-xs text-primary/80">
+            That’s not just our tagline — it’s our philosophy.
+          </p>
+        </TextFade>
       </div>
     </div>
   );

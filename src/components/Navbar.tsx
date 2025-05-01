@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoMdClose } from "react-icons/io";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -159,10 +160,11 @@ export default function Navbar() {
               <div className="flex justify-between items-center mb-10">
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="bg-black px-3 py-2 rounded-4xl text-third font-medium hover:text-third/80 cursor-pointer font-Inter uppercase transition-colors text-sm"
+                  className="bg-black p-3 rounded-4xl text-third font-medium hover:text-third/80 cursor-pointer font-Inter uppercase transition-colors text-sm"
                   aria-label="Close menu"
                 >
-                  Close
+                  <span className="sr-only">Close</span>
+                  <IoMdClose size={22} />
                 </button>
               </div>
 

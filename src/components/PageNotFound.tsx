@@ -14,7 +14,7 @@ const PageNotFound = () => {
       </TextFade>
       <AnimatedText
         text="Page  Not  Found"
-        className="md:text-5xl lg:text-6xl text-4xl pt-1 uppercase font-semibold font-Cormorant text-center bg-gradient-to-b from-primary via-primary/60 to-primary/0 bg-clip-text text-transparent"
+        className="md:text-5xl lg:text-6xl text-4xl pt-1 uppercase font-semibold font-Cormorant text-center text-primary"
       />
       <TextFade direction="down">
         <p className="font-Inter italic text-xl mt-2 text-center md:text-base  text-subheading">
