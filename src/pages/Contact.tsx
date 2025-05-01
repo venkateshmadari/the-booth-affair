@@ -1,6 +1,10 @@
+import ComingSoon from "../components/ComingSoon";
+
 const Contact = () => {
   return (
-    <div className="h-screen flex items-center justify-center">Contact</div>
+    <div>
+      <ComingSoon />
+    </div>
   );
 };
 

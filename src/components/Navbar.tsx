@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,16 +9,13 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const sidebarRef = useRef<HTMLDivElement>(null);
 
-  // Handle scroll behavior
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        // Scrolling down
         setIsVisible(false);
       } else if (currentScrollY < lastScrollY) {
-        // Scrolling up
         setIsVisible(true);
       }
 
@@ -28,7 +26,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  // Click outside sidebar handler
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -46,7 +43,6 @@ export default function Navbar() {
     };
   }, [isOpen]);
 
-  // Prevent scrolling when sidebar is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -60,19 +56,18 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
+    { name: "About Us", href: "/about-us" },
     { name: "Services", href: "/services" },
-    { name: "Book Now", href: "/booking" },
-    { name: "About Us", href: "/about" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "Book Now", href: "/book-now" },
+    { name: "Our Blogs", href: "/our-blogs" },
+    { name: "Contact Us", href: "/contact-us" },
   ];
 
-  // Navbar animation variants
   const navbarVariants = {
     visible: { y: 0 },
     hidden: { y: "-100%" },
   };
 
-  // Sidebar animation variants
   const sidebarVariants = {
     closed: {
       x: "-100%",
@@ -96,7 +91,6 @@ export default function Navbar() {
     },
   };
 
-  // Link animation variants
   const linkVariants = {
     closed: {
       opacity: 0,
@@ -110,32 +104,30 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Main Navbar */}
       <motion.nav
         initial={{ y: 0 }}
         animate={isVisible ? "visible" : "hidden"}
         variants={navbarVariants}
         transition={{ type: "tween", duration: 0.3 }}
-        className="fixed top-0 left-0 right-0 z-10 bg-primary shadow-xs"
+        className="fixed top-0 left-0 right-0 z-[1000] bg-primary shadow-xs"
       >
         <div className="container mx-auto px-4 h-24 flex items-center justify-between">
           <button
             onClick={() => setIsOpen(true)}
-            className="text-secondary px-3 py-2 font-semibold uppercase transition-colors cursor-pointer font-Inter text-sm"
+            className="text-secondary px-3 py-2 z-10 font-medium uppercase transition-colors cursor-pointer font-Inter text-sm"
             aria-label="Open menu"
           >
-            Menu
+            <RxHamburgerMenu className=" text-secondary/75" size={22} />
           </button>
 
-          <div className="absolute left-1/2 -translate-x-1/2">
-            <div className="flex flex-col gap-0.5">
-              <h1 className="text-2xl uppercase font-Cormorant text-secondary font-semibold">
-                the booth affair
-              </h1>
-              <p className="capitalize text-secondary text-sm italic text-center">
-                flash. flirt. repeat
-              </p>
-            </div>
+          <div className="flex-1 flex justify-center">
+            <Link to="/">
+              <img
+                src="/booth-affair.jpg"
+                alt="the-booth-affair"
+                className="md:h-20 h-16 md:ml-0 -ml-4 object-contain"
+              />
+            </Link>
           </div>
         </div>
       </motion.nav>
@@ -161,7 +153,7 @@ export default function Navbar() {
             animate="open"
             exit="closed"
             variants={sidebarVariants}
-            className="fixed top-0 left-0 h-full bg-primary z-30 w-4/5 md:w-1/5 shadow-xl"
+            className="fixed top-0 left-0 h-full bg-primary z-[1000] w-4/5 md:w-1/5 shadow-xl"
           >
             <div className="p-6 h-full flex flex-col">
               <div className="flex justify-between items-center mb-10">
@@ -174,12 +166,12 @@ export default function Navbar() {
                 </button>
               </div>
 
-              <div className="flex flex-col space-y-6">
+              <div className="flex flex-col gap-6">
                 {navLinks.map((link, index) => (
                   <motion.div key={index} variants={linkVariants}>
                     <Link
                       to={link.href}
-                      className="text-4xl font-medium text-secondary font-Cormorant hover:text-third transition-colors"
+                      className="text-4xl font-medium text-secondary z-[1000] font-Cormorant hover:text-third transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}

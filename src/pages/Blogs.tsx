@@ -1,6 +1,7 @@
+
 import ComingSoon from "../components/ComingSoon";
 
-const BookNow = () => {
+const Blogs = () => {
   return (
     <div>
       <ComingSoon />
@@ -8,4 +9,4 @@ const BookNow = () => {
   );
 };
 
-export default BookNow;
+export default Blogs;

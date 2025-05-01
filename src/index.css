@@ -2,10 +2,44 @@
 
 @theme {
     --color-primary: #270100;
-    --color-secondary: #f0d5ce;
-    --color-third: #d2c291;
+    --color-secondary: #EFD5CE;
+    --color-third: #D4C392;
+    --color-subheading: #242424;
 
 
     --font-Cormorant: "Cormorant", serif;
     --font-Inter: "Inter", sans-serif;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-secondary);
+}
+
+.gradient-text {
+    font-size: 2.25rem;
+    /* text-4xl by default */
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Cormorant", serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #270100, rgba(39, 1, 0, 0.6), rgba(39, 1, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Responsive font sizes */
+@media (min-width: 768px) {
+    .gradient-text {
+        font-size: 3.75rem;
+        /* md:text-6xl */
+    }
+}
+
+@media (min-width: 1024px) {
+    .gradient-text {
+        font-size: 5rem;
+        /* lg:text-8xl */
+    }
 }
