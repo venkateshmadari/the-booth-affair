@@ -27,7 +27,7 @@ const AboutUs = () => {
             </TextFade>
           </div>
 
-          <div className="relative h-96">
+          <div className="relative h-96 md:m-0 -mt-12 mb-10">
             <div className="absolute top-10 left-0 md:w-3/5 w-4/5 h-3/5 z-10">
               <img
                 src={AboutImages.aboutBackgroundImage}
@@ -37,11 +37,11 @@ const AboutUs = () => {
             </div>
 
             {/* Overlapping image */}
-            <div className="absolute bottom-0 md:right-[25%] right-[1%] md:top-[25%] top-[30%] md:w-3/5 w-4/5 h-3/5 z-20">
+            <div className="absolute bottom-0 md:right-[25%] right-[1%] md:top-[25%] top-[30%] md:w-3/5 w-4/5 h-[70%] z-20">
               <img
                 src={AboutImages.aboutBehindImage}
                 alt="Artwork 2"
-                className="w-full h-full object-contain bg-black rounded-lg shadow-xl border-4 border-third"
+                className="w-full h-full object-cover bg-black rounded-lg shadow-xl border-4 border-third"
               />
             </div>
           </div>

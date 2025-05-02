@@ -6,7 +6,7 @@ import homeImageFive from "../images/home-image-six.jpg";
 import homeImageSix from "../images/home-image-seven.jpg";
 import homeImageSeven from "../images/home-image-eight.jpg";
 import aboutBackgroundImage from "../images/aboutBackgroundImage.JPG";
-import aboutBehindImage from "../images/aboutBehindImage.JPG";
+import aboutBehindImage from "../images/img.JPG";
 
 export const Images = {
   homeFirstImage: homeImageOne,
