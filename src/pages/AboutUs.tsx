@@ -27,9 +27,7 @@ const AboutUs = () => {
             </TextFade>
           </div>
 
-          {/* Image overlap section */}
           <div className="relative h-96">
-            {/* Base image */}
             <div className="absolute top-10 left-0 md:w-3/5 w-4/5 h-3/5 z-10">
               <img
                 src={AboutImages.aboutBackgroundImage}
