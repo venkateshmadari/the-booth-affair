@@ -44,7 +44,7 @@ const Home = () => {
           </TextFade>
         </button>
       </section>
-      <div className="flex flex-col items-center justify-center -mt-20 mb-12 px-3">
+      <div className="flex flex-col items-center justify-center -mt-12 mb-12 px-3">
         <div className="flex  border-[1.6px] w-full max-w-2xl ">
           <p className="w-full placeholder:text-primary font-Cormorant font-semibold md:text-xl  border border-r-[1.6px] border-y-0 border-l-0 bg-transparent placeholder-gold text-gold py-2 px-4">
             Email address
