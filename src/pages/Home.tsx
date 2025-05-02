@@ -37,12 +37,14 @@ const Home = () => {
         </TextFade>
         <button className="text-center font-Cormorant capitalize text-2xl border-b mt-6 cursor-pointer font-medium">
           <TextFade direction="up" className="flex items-center gap-1.5">
-            <Link to={"/book-now"}>book now</Link>
+            <Link to={"/book-now"} className="md:text-4xl text-3xl">
+              book now
+            </Link>
             <IoIosArrowRoundForward />
           </TextFade>
         </button>
       </section>
-      <div className="flex flex-col items-center justify-center -mt-14 mb-12 px-3 ">
+      <div className="flex flex-col items-center justify-center -mt-32 mb-12 px-3 ">
         <div className="flex  border-[1.6px] w-full max-w-2xl ">
           <p className="w-full placeholder:text-primary font-Cormorant font-semibold md:text-xl  border border-r-[1.6px] border-y-0 border-l-0 bg-transparent placeholder-gold text-gold py-2 px-4">
             Email address

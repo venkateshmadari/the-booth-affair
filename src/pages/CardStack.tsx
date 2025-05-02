@@ -1,19 +1,19 @@
-"use client";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "../hooks/use-media-query";
+import { Images } from "../ImageContainer/images";
 
 const images = [
-  "https://i.pinimg.com/736x/48/c3/c7/48c3c7d476141eef78a308cba15b8837.jpg",
-  "https://i.pinimg.com/736x/c5/5d/39/c55d396616245df2b703c37d91189e4d.jpg",
-  "https://i.pinimg.com/736x/b7/83/c9/b783c9bd42f3385726150e519cb8bb25.jpg",
-  "https://i.pinimg.com/736x/5c/cb/a8/5ccba8e542a39be1c9b90e208d7b9c34.jpg",
-  "https://i.pinimg.com/736x/a2/2a/b6/a22ab603de1d56f51966be522a3f2277.jpg",
-  "https://i.pinimg.com/736x/19/57/38/19573808dd0046c2cee95814ad63e800.jpg",
-  "https://i.pinimg.com/736x/dd/f1/24/ddf124bcc3669827406f08fe2fd24808.jpg",
+  Images.homeFirstImage,
+  Images.homeSecondImage,
+  Images.homeThirdImage,
+  Images.homeFourthImage,
+  Images.homeFifthImage,
+  Images.homeSixthImage,
+  Images.homeSeventhImage,
 ];
 
 const rotations = {
-  small: ["-rotate-12", "rotate-0", "rotate-12"], 
+  small: ["-rotate-12", "rotate-0", "rotate-12"],
   medium: ["-rotate-8", "-rotate-4", "rotate-0", "rotate-4", "rotate-8"],
   large: [
     "-rotate-10",
@@ -23,7 +23,7 @@ const rotations = {
     "rotate-10",
     "rotate-15",
     "rotate-20",
-  ], // For 7 cards (desktop)
+  ],
 };
 
 const zIndices = ["z-10", "z-20", "z-30", "z-40", "z-50", "z-40", "z-30"];

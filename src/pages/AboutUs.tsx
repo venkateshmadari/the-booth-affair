@@ -1,5 +1,6 @@
 import { AnimatedText } from "../Animations/AnimatedText";
 import { TextFade } from "../Animations/TextFade";
+import { AboutImages } from "../ImageContainer/images";
 
 const AboutUs = () => {
   return (
@@ -31,7 +32,7 @@ const AboutUs = () => {
             {/* Base image */}
             <div className="absolute top-10 left-0 md:w-3/5 w-4/5 h-3/5 z-10">
               <img
-                src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                src={AboutImages.aboutBackgroundImage}
                 alt="Artwork 1"
                 className="w-full h-full object-cover rounded-lg shadow-xl border-4 border-third"
               />
@@ -40,9 +41,9 @@ const AboutUs = () => {
             {/* Overlapping image */}
             <div className="absolute bottom-0 md:right-[25%] right-[1%] md:top-[25%] top-[30%] md:w-3/5 w-4/5 h-3/5 z-20">
               <img
-                src="https://i.pinimg.com/736x/bd/48/6b/bd486b098d266b98d3b7c50dadfaf32a.jpg"
+                src={AboutImages.aboutBehindImage}
                 alt="Artwork 2"
-                className="w-full h-full object-cover rounded-lg shadow-xl border-4 border-third"
+                className="w-full h-full object-contain bg-black rounded-lg shadow-xl border-4 border-third"
               />
             </div>
           </div>
