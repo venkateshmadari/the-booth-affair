@@ -124,9 +124,9 @@ export default function Navbar() {
           <div className="flex-1 flex justify-center">
             <Link to="/">
               <img
-                src="/logo-copy.PNG"
+                src="/new-logo.PNG"
                 alt="the-booth-affair"
-                className="md:h-24 h-16 md:ml-0 -ml-4 object-contain"
+                className="md:h-24 h-20 md:ml-0 -ml-4 object-contain"
               />
             </Link>
           </div>
