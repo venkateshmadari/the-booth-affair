@@ -7,7 +7,7 @@ const FrequentlyAskedQuestions = () => {
     <div className="min-h-screen p-8 mt-32 max-w-6xl mx-auto">
       <AnimatedText
         text="FAQs - The Booth Affair"
-        className="md:text-5xl text-4xl capitalize font-semibold font-Cormorant text-center text-primary"
+        className="md:text-5xl text-4xl capitalize font-semibold font-Cormorant text-center text-redshade"
       />
 
       {/* 1st  */}

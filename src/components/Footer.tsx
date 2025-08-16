@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-8 px-8 md:px-16 border-t border-third bg-secondary">
+    <footer className="py-8 px-8 md:px-16">
       <div className="grid grid-cols-2 gap-8">
         <div className="flex flex-col space-y-4">
           <TextFade direction="up">

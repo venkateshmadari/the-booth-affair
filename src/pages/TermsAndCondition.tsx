@@ -6,7 +6,7 @@ const TermsAndCondition = () => {
     <div className="min-h-screen p-8 mt-32 max-w-6xl mx-auto">
       <AnimatedText
         text="terms and conditions"
-        className="md:text-5xl text-4xl capitalize font-semibold font-Cormorant text-center text-primary"
+        className="md:text-5xl text-4xl capitalize font-semibold font-Cormorant text-center text-redshade"
       />
       <TextFade direction="down">
         <p className="font-Inter my-6 md:text-lg text-subheading">

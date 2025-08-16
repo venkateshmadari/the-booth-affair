@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
     <div className="min-h-screen p-8 mt-32 max-w-6xl mx-auto">
       <AnimatedText
         text="privacy policy"
-        className="md:text-5xl text-4xl capitalize font-semibold font-Cormorant text-center text-primary"
+        className="md:text-5xl text-4xl capitalize font-semibold font-Cormorant text-center text-[#BF3327]"
       />
       <TextFade direction="down">
         <p className="font-Inter my-8 md:text-lg text-subheading">

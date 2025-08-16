@@ -110,7 +110,7 @@ export default function Navbar() {
         animate={isVisible ? "visible" : "hidden"}
         variants={navbarVariants}
         transition={{ type: "tween", duration: 0.3 }}
-        className="fixed top-0 left-0 right-0 z-[1000] bg-primary shadow-xs"
+        className="fixed top-0 left-0 right-0 z-[1000] bg-white shadow-xs"
       >
         <div className="container mx-auto px-4 h-24 flex items-center justify-between">
           <button
@@ -118,15 +118,15 @@ export default function Navbar() {
             className="text-secondary px-3 py-2 z-10 font-medium uppercase transition-colors cursor-pointer font-Inter text-sm"
             aria-label="Open menu"
           >
-            <RxHamburgerMenu className=" text-secondary/75" size={22} />
+            <RxHamburgerMenu className="text-black" size={22} />
           </button>
 
           <div className="flex-1 flex justify-center">
             <Link to="/">
               <img
-                src="/booth-affair.jpg"
+                src="/logo-copy.PNG"
                 alt="the-booth-affair"
-                className="md:h-20 h-16 md:ml-0 -ml-4 object-contain"
+                className="md:h-24 h-16 md:ml-0 -ml-4 object-contain"
               />
             </Link>
           </div>
@@ -154,13 +154,13 @@ export default function Navbar() {
             animate="open"
             exit="closed"
             variants={sidebarVariants}
-            className="fixed top-0 left-0 h-full bg-primary z-[1000] w-4/5 lg:w-1/5 md:w-2/5 shadow-xl"
+            className="fixed top-0 left-0 h-full bg-white  z-[1000] w-4/5 lg:w-1/5 md:w-2/5 shadow-xl"
           >
             <div className="p-6 h-full flex flex-col">
               <div className="flex justify-between items-center mb-10">
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="bg-black p-3 rounded-4xl text-third font-medium hover:text-third/80 cursor-pointer font-Inter uppercase transition-colors text-sm"
+                  className="bg-black p-3 rounded-4xl text-white font-medium hover:text-third/80 cursor-pointer font-Inter uppercase transition-colors text-sm"
                   aria-label="Close menu"
                 >
                   <span className="sr-only">Close</span>
@@ -173,7 +173,7 @@ export default function Navbar() {
                   <motion.div key={index} variants={linkVariants}>
                     <Link
                       to={link.href}
-                      className="text-4xl font-medium text-secondary z-[1000] font-Cormorant hover:text-third transition-colors"
+                      className="text-4xl font-medium text-black z-[1000] font-Cormorant hover:text-gray-800 transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}

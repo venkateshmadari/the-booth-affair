@@ -12,22 +12,22 @@ const Home = () => {
         <div className="flex md:gap-4 gap-2">
           <AnimatedText
             text="the"
-            className="uppercase font-Cormorant 2xl:text-7xl xl:text-6xl md:text-5xl text-4xl font-bold gradient-text  -mt-8"
+            className="uppercase font-Cormorant 2xl:text-7xl xl:text-6xl md:text-5xl text-4xl font-bold gradient-text text-black -mt-8"
           />
           <AnimatedText
             text="booth"
-            className="uppercase font-Cormorant 2xl:text-7xl xl:text-6xl md:text-5xl text-4xl font-bold gradient-text "
+            className="uppercase font-Cormorant 2xl:text-7xl xl:text-6xl md:text-5xl text-4xl font-bold gradient-text text-black"
           />
           <AnimatedText
             text="affair"
-            className="uppercase font-Cormorant 2xl:text-7xl xl:text-6xl md:text-5xl text-4xl font-bold gradient-text  mt-3"
+            className="uppercase font-Cormorant 2xl:text-7xl xl:text-6xl md:text-5xl text-4xl font-bold gradient-text text-black mt-3"
           />
         </div>
 
         <CardStack />
         <AnimatedText
           text="flash. flirt. repeat"
-          className="capitalize font-Cormorant italic text-2xl font-semibold text-primary"
+          className="capitalize font-Cormorant italic text-2xl font-semibold text-redshade"
         />
         <TextFade direction="up">
           <p className="text-center md:max-w-md font-Cormorant text-lg  font-semibold text-primary/80">

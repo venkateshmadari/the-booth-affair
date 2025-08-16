@@ -91,12 +91,12 @@ const AboutUs = () => {
           </TextFade>
         </div> */}
         <TextFade direction="down">
-          <p className="font-Cormorant pt-8 pb-1 text-center text-primary font-semibold text-4xl italic">
+          <p className="font-Cormorant pt-8 pb-1 text-center text-redshade font-semibold text-4xl italic">
             Flash. Flirt. Repeat.
           </p>
         </TextFade>
         <TextFade direction="down">
-          <p className="font-Inter pb-8 text-center  md:text-base text-xs text-primary/80">
+          <p className="font-Inter pb-8 text-center  md:text-base text-xs text-redshade">
             That’s not just our tagline — it’s our philosophy.
           </p>
         </TextFade>
